@@ -7,15 +7,17 @@ h1{
 p{
  font-family: 'Quicksand', sans-serif;
  text-align: center;
+ color: #000;
 }
 
 nav{
   width: 100%;
 }
 #nav-bar ul {
-  width: 640px;
+  width: 759px;
   margin : auto;
   float: bottom;
+  font-size: 12px;
 }
 ul {
    list-style: none;
@@ -65,11 +67,13 @@ li:hover li {
   float: none;
 }
 li:hover li a:hover {
-  background: none;
-  color:#000;
+  background: solid;
 }
 #drop-nav li ul li {
   border-top: 0px;
+  background-color: rgb(255,255,255);
+  width: 196px;
+  z-index : 10;
 }
 ul a:hover{
   color :#000;
@@ -78,11 +82,16 @@ ul a:link{
   font-size : 200%; 
 }
 
+.BD{
+  color: #87cefa;
+}
+
 .css-slideshow{
    position: relative;
    max-width: 510px;
    height: 375px;
    margin: 5em auto .5em auto;
+   z-index: 2;
 }
 .css-slideshow figure{
    margin: 0;
