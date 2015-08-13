@@ -6,6 +6,9 @@ h1{
  text-transform: uppercase;
  font-weight: bold;
 }
+span{
+  color: #87cefa;
+}
 h2{
  font-family: 'Quicksand', sans-serif;
  text-transform: uppercase;
@@ -13,21 +16,26 @@ h2{
 p{
  font-family: 'Quicksand', sans-serif;
  text-align: center;
+ color: #000;
  text-transform: uppercase;
  font-size: 85%;
 }
 ol{
  font-family: 'Quicksand', sans-serif;
  text-transform: uppercase;
+=======
+ color: #000;
+>>>>>>> c915e1c866a24211f610ed46ecf11228ea4a2320
 }
 
 nav{
   width: 100%;
 }
 #nav-bar ul {
-  width: 640px;
+  width: 759px;
   margin : auto;
   float: bottom;
+  font-size: 12px;
 }
 ul {
    list-style: none;
@@ -54,6 +62,24 @@ ul li.active a {
   font-weight: 100px;
   color :#000;
 }
+ul li.active a {
+  font-weight: 100px;
+  color : #87cefa;
+}
+
+ul li.active a:hover{
+  color: #000;
+}
+
+ul#menu li a {
+  font-weight: 100px;
+  color : #000;
+}
+
+ul#menu li a:hover{
+  color: #87cefa;
+}
+ 
 ul li a {
   text-decoration: none;
   color: #ccc;
@@ -77,11 +103,13 @@ li:hover li {
   float: none;
 }
 li:hover li a:hover {
-  background: none;
-  color:#000;
+  background: solid;
 }
 #drop-nav li ul li {
   border-top: 0px;
+  background-color: rgb(255,255,255);
+  width: 196px;
+  z-index : 10;
 }
 ul a:hover{
   color :#000;
@@ -89,12 +117,16 @@ ul a:hover{
 ul a:link{
   font-size : 200%; 
 }
+.BD{
+  color: #87cefa;
+}
 
 .css-slideshow{
    position: relative;
    max-width: 510px;
    height: 375px;
    margin: 5em auto .5em auto;
+   z-index: 2;
 }
 .css-slideshow figure{
    margin: 0;
@@ -169,8 +201,8 @@ a.button {
   text-decoration: none;
 }
 a.button:hover {
-  background-color: white;
-  color: black;
+  background-color: #87cefa;
+  color: white;
   text-decoration: none;
 }
 
@@ -180,4 +212,40 @@ a.button:hover {
   float: right;
   margin-right: 18px;
   margin-top: 50px;
+}
+/* Restaurant Page */
+h3{
+ font-family: 'Quicksand', sans-serif;
+ text-transform: uppercase;
+}
+div.restaurant p{
+ font-family: 'Quicksand', sans-serif;
+ text-transform: uppercase;
+ text-align: left;
+}
+div.restaurant img{
+  width : 288px;
+  height : 240px;
+  border : solid;
+  border-color : #87cefa;
+}
+div.links a{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  color : black;
+}
+div.restaurant h3{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  color : #87cefa;
+}
+div.restuarant span{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  color : #87cefa;
+}
+div.restaurant_description p{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  color : #87cefa;
 }
