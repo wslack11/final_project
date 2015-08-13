@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+
+h1{
+ font-family: 'Quicksand', sans-serif;
+ text-align: center;
+}
+p{
+ font-family: 'Quicksand', sans-serif;
+ text-align: center;
+}
+
+nav{
+  width: 100%;
+}
+#nav-bar ul {
+  width: 640px;
+  margin : auto;
+  float: bottom;
+}
+ul {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  border-right: 1px solid #000;
+  padding: 7px;
+}
+li ul {
+  display: none;
+}
+ul ul#menu li{
+  border:none;
+}
+ul li:last-child{
+  border: none;
+}
+ul li.active a {
+  font-weight: 100px;
+  color :#000;
+}
+ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size : 15px;
+  font-family : 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border : none;
+  z-index: 20;
+  position: relative;
+}
+li:hover ul{
+  display: block; 
+  position: absolute;
+}
+li:hover li {
+  float: none;
+}
+li:hover li a:hover {
+  background: none;
+  color:#000;
+}
+#drop-nav li ul li {
+  border-top: 0px;
+}
+ul a:hover{
+  color :#000;
+}
+ul a:link{
+  font-size : 200%; 
+}
+
+.css-slideshow{
+   position: relative;
+   max-width: 510px;
+   height: 375px;
+   margin: 5em auto .5em auto;
+}
+.css-slideshow figure{
+   margin: 0;
+   position: absolute;
+   opacity: 0;
+}
+.css-slideshow figcaption{
+   position: absolute;
+   top: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.css-slideshow:hover figure figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+}
+figure:nth-child(1) {
+   animation: xfade 48s 42s infinite;
+}
+figure:nth-child(2) {
+   animation: xfade 48s 36s infinite;
+}
+figure:nth-child(3) {
+   animation: xfade 48s 30s infinite;
+}
+figure:nth-child(4) {
+   animation: xfade 48s 24s infinite;
+}
+figure:nth-child(5) {
+   animation: xfade 48s 18s infinite;
+}
+figure:nth-child(6) {
+   animation: xfade 48s 12s infinite;
+}
+figure:nth-child(7) {
+   animation: xfade 48s 6s infinite;
+}
+figure:nth-child(8) {
+   animation: xfade 48s 0s infinite;
+}
+@keyframes xfade{
+   0%{
+      opacity: 1;
+   }
+   10.5% {
+      opacity:1;
+   }
+   12.5%{
+      opacity: 0;
+   }
+   98% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+
+a.button {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  background: #000000;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+}
+a.button:hover {
+  background: #ff0000;
+  text-decoration: none;
+}
+
+#authors{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 12px; 
+  float: right;
+  margin-right: 18px;
+  margin-top: 50px;
+}
